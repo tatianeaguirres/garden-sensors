@@ -1,0 +1,108 @@
+{
+  "project": {
+    "name": "Garden Sensors",
+    "location": "Utrecht"
+  },
+  "loggedInUser": {
+    "id": 1,
+    "firstName": "Tatiane",
+    "lastName": "Aguirres Nogueira",
+    "avatarUrl": "https://avatars1.githubusercontent.com/u/15195125?s=460&v=4"
+  },
+  "defaultValues": {
+    "min_moisture": 20,
+    "max_moisture": 60,
+    "min_battery": 20,
+    "min_conductivity": 500,
+    "max_conductivity": 3000,
+    "min_temperature": 15,
+    "max_temperature": 25,
+    "min_brightness": 270,
+    "max_brightness": 1615,
+    "check_days": 3
+  },
+  "unitsOfMeasure": {
+    "moisture": "%",
+    "battery": "%",
+    "temperature": "°C",
+    "conductivity": "µS/cm",
+    "brightness": "Lux"
+  },
+  "plants": [
+    {
+      "id": 1,
+      "name": "lily",
+      "quality": "HIGH",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Lilium_longiflorum_%28Easter_Lily%29.JPG",
+      "sensors": [
+        {
+          "moisture": 41,
+          "battery": 93,
+          "temperature": 18.93,
+          "conductivity": 2083,
+          "brightness": 973
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "petunia",
+      "quality": "LOW",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Petunia.jpg",
+      "sensors": [
+        {
+          "moisture": 53,
+          "battery": 15,
+          "temperature": 19.05,
+          "conductivity": 1593,
+          "brightness": 261
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "rose",
+      "quality": "HIGH",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Rosa_%27Rosengr%C3%A4fin_Marie_Henriette%27_%28actm%29.jpg/1280px-Rosa_%27Rosengr%C3%A4fin_Marie_Henriette%27_%28actm%29.jpg",
+      "sensors": [
+        {
+          "moisture": 35,
+          "battery": 76,
+          "temperature": 22.5,
+          "conductivity": 1037,
+          "brightness": 1284
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "tulip",
+      "quality": "HIGH",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tulip_with_variegated_colors.jpg/1024px-Tulip_with_variegated_colors.jpg",
+      "sensors": [
+        {
+          "moisture": 56,
+          "battery": 89,
+          "temperature": 21,
+          "conductivity": 1134,
+          "brightness": 1156
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "sunflower",
+      "quality": "LOW",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Sunflower_sky_backdrop.jpg/1280px-Sunflower_sky_backdrop.jpg",
+      "sensors": [
+        {
+          "moisture": 55,
+          "battery": 19,
+          "temperature": 20.79,
+          "conductivity": 2647,
+          "brightness": 219
+        }
+      ]
+    }
+  ]
+}
