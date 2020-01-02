@@ -1,13 +1,26 @@
 import React from 'react'
-import { render } from '@testing-library/react'
+import { render, wait } from '@testing-library/react'
+import '@testing-library/jest-dom/extend-expect'
 import List from '../list'
 
+const mockSuccessResponse = [
+  {
+    id: 1,
+    name: 'lily'
+  }
+]
+const mockJsonPromise = Promise.resolve(mockSuccessResponse)
+const mockFetchPromise = Promise.resolve({
+  json: () => mockJsonPromise
+})
+
 describe('<List/>', () => {
-  it('renders content', () => {
+  beforeEach(() => {
+    fetch = jest.fn(() => mockFetchPromise)
+  })
+
+  it('fetches data from server when server returns a successful response', async () => {
     const { getByText } = render(<List />)
-
-    const content = getByText('Sensor Plants')
-
-    expect(content).toBeInTheDocument()
+    await wait(() => expect(getByText('lily')).toBeInTheDocument())
   })
 })
