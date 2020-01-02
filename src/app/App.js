@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+import './App.css'
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
         <h1>Garden Sensors</h1>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
