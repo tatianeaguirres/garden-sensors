@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from '@reach/router'
 
 const List = () => {
   const [plants, setPlants] = useState([])
@@ -26,7 +27,11 @@ const List = () => {
         <div>
           <ul>
             {plants.map((plant, index) => (
-              <li key={index}>{plant.name}</li>
+              <li key={index}>
+                <Link state={plant} to={`/details/${plant.id}`}>
+                  {plant.name}
+                </Link>
+              </li>
             ))}
           </ul>
         </div>
